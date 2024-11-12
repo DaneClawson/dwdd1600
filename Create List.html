@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FavFlicks - Rate Your Flick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rate your favorite movies and shows based on different categories on FavFlicks.">
+    <meta name="author" content="Rugder Dane Clawson">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- Start of the header section -->
+    <header>
+        <h1>Rate Your Flick</h1>
+        <p>Rate each aspect of your favorite movie or show below!</p>
+
+        <!-- Navigation section -->
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create_lists.html">Create Lists</a></li>
+                <li><a href="my_lists.html">My Lists</a></li>
+                <li><a href="my_friends.html">My Friends</a></li>
+                <li><a href="share.html">Share</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Start of the main content section -->
+    <main> 
+        <h2>Rate Your Favorite Show or Movie</h2>
+
+        <!-- Rating Form -->
+        <form action="submit_rating.html" method="post">
+            <!-- Title of Movie/Show -->
+            <label for="title">Title of Movie/Show:</label>
+            <input type="text" id="title" name="title" required>
+            <br><br>
+
+            <!-- Cinematography Rating -->
+            <label for="cinematography">Cinematography:</label>
+            <input type="number" id="cinematography" name="cinematography" min="1" max="10" required>
+            <br><br>
+
+            <!-- Emotion Rating -->
+            <label for="emotion">Emotion:</label>
+            <input type="number" id="emotion" name="emotion" min="1" max="10" required>
+            <br><br>
+
+            <!-- Graphics/Picture Rating -->
+            <label for="graphics">Graphics/Picture:</label>
+            <input type="number" id="graphics" name="graphics" min="1" max="10" required>
+            <br><br>
+
+            <!-- Character Development Rating -->
+            <label for="character">Character Development:</label>
+            <input type="number" id="character" name="character" min="1" max="10" required>
+            <br><br>
+
+            <!-- Storyline Rating -->
+            <label for="storyline">Storyline:</label>
+            <input type="number" id="storyline" name="storyline" min="1" max="10" required>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Rating</button>
+        </form>
+    </main>
+
+    <!-- Start of the footer section -->
+    <footer> 
+        <p>&copy; 2024 FavFlicks | Created by Rugder Dane Clawson &bullet; <a href="mailto:email@example.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
